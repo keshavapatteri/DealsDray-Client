@@ -4,7 +4,7 @@ import { axiosInstance } from '../../../Config/AxiosInstance';
 import { useNavigate } from 'react-router-dom'; // Correct import for navigation
 
 const AdminLoginPage = () => {
-    // State for email and password
+    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
