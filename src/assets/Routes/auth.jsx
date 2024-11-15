@@ -33,5 +33,12 @@ export const UserAuth = ({ children }) => {
     return <div>Loading...</div>; // Show a loading indicator
   }
 
-  return user ? children : null;
+  return user ? (
+    children
+  ) : (
+    <div className="bg-white flex items-center justify-center "style={{height:"100vh"}}>
+ <div className="loading loading-spinner text-sky-500">Loading...</div>
+    </div>
+   
+  );
 };
