@@ -16,6 +16,7 @@ const AdminHeader = () => {
   
     toast.success('Logout Successful');
     navigate('/user/login', { replace: true });
+    window.location.reload();
   };
   
 
